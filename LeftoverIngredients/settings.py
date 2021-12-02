@@ -25,11 +25,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 # Random Secret Key generaged for temporary using.
 SECRET_KEY = "ce38c878ed7ba4a495bd55dd178802967d74b87954e378a1"
 # "django-insecure-u03fiiz(78g6^^+2eot5yml*&f#2g7z&1i7no_bxkw^05dk2!p"
 # env['DJANGO_SECRET_KEY']
+=======
+SECRET_KEY = "django-insecure-u03fiiz(78g6^^+2eot5yml*&f#2g7z&1i7no_bxkw^05dk2!p"
+>>>>>>> parent of 1723781 (Merge pull request #6 from CSC-456000-Team/main)
 =======
 SECRET_KEY = "django-insecure-u03fiiz(78g6^^+2eot5yml*&f#2g7z&1i7no_bxkw^05dk2!p"
 >>>>>>> parent of 1723781 (Merge pull request #6 from CSC-456000-Team/main)
@@ -46,6 +50,7 @@ DEBUG = True
 ALLOWED_HOSTS = ["127.0.0.1", "fathomless-cliffs-95117.herokuapp.com"]
 # ["127.0.0.1", ".herokuapp.com"]
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -71,6 +76,7 @@ ADMINS = [
 >>>>>>> parent of 1723781 (Merge pull request #6 from CSC-456000-Team/main)
 =======
 >>>>>>> parent of 1723781 (Merge pull request #6 from CSC-456000-Team/main)
+=======
 >>>>>>> parent of 1723781 (Merge pull request #6 from CSC-456000-Team/main)
 # Application definition
 
@@ -129,6 +135,7 @@ DATABASES = {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     #     "default": {
     #                 "ENGINE": "django.db.backends.postgresql_psycopg2",
     #                 "NAME": "d5gilrqcksk06t",
@@ -137,6 +144,8 @@ DATABASES = {
     #                 "HOST": env['DATABASE_HOST'],
     #                 "PORT":"5432",
     #     }
+=======
+>>>>>>> parent of 1723781 (Merge pull request #6 from CSC-456000-Team/main)
 =======
 >>>>>>> parent of 1723781 (Merge pull request #6 from CSC-456000-Team/main)
 =======
@@ -194,7 +203,11 @@ MEDIA_URL = "/media/"
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # API_KEY = env["API_KEY_SPOONACULAR"]  # Spoonacular API key
+=======
+API_KEY = "9f97e9f457aa4379ba2cb4c32072aec4"  # Spoonacular API key
+>>>>>>> parent of 1723781 (Merge pull request #6 from CSC-456000-Team/main)
 =======
 API_KEY = "9f97e9f457aa4379ba2cb4c32072aec4"  # Spoonacular API key
 >>>>>>> parent of 1723781 (Merge pull request #6 from CSC-456000-Team/main)
