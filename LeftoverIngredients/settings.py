@@ -71,6 +71,7 @@ ADMINS = [
 >>>>>>> parent of 1723781 (Merge pull request #6 from CSC-456000-Team/main)
 =======
 >>>>>>> parent of 1723781 (Merge pull request #6 from CSC-456000-Team/main)
+>>>>>>> parent of 1723781 (Merge pull request #6 from CSC-456000-Team/main)
 # Application definition
 
 INSTALLED_APPS = [
