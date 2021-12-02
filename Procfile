@@ -1,1 +1,1 @@
-web: gunicorn LeftoverIngredients.wsgi --log-file -
+web: gunicorn LeftoverIngredients.wsgi
