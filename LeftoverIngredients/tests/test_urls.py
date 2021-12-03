@@ -1,9 +1,9 @@
 from django.contrib.auth.views import LoginView, LogoutView
 from django.test import SimpleTestCase
 from django.urls import resolve, reverse
+from users.views import profile, register
 
 from main.views import about, home, recipe, search
-from users.views import profile, register
 
 
 class TestUrls(SimpleTestCase):

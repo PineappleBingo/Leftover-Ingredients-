@@ -9,12 +9,11 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
 import os
-from os import environ as env
 from pathlib import Path
 
 # import django_heroku
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,9 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env["DJANGO_SECRET_KEY"]
 
-# SECURITY WARNING: don't run with debug turned on in production!
+# Random Secret Key generaged for temporary using.
+SECRET_KEY = "ce38c878ed7ba4a495bd55dd178802967d74b87954e378a1"
+# "django-insecure-u03fiiz(78g6^^+2eot5yml*&f#2g7z&1i7no_bxkw^05dk2!p"
+# env['DJANGO_SECRET_KEY']
+
 DEBUG = True
 
 ALLOWED_HOSTS = ["127.0.0.1", "fathomless-cliffs-95117.herokuapp.com"]
@@ -40,15 +42,15 @@ ADMINS = [
 ]
 
 # Email Settings: Setting up the account that the application is going to use to send emails from
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_USE_TLS = True
-EMAIL_HOST = "smtp.gmail.com"
-EMAIL_PORT = 587
-EMAIL_HOST_USER = env["EMAIL_HOST_USER"]
-EMAIL_HOST_PASSWORD = env["EMAIL_HOST_PASSWORD"]
-
+# EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+# EMAIL_USE_TLS = True
+# EMAIL_HOST = "smtp.gmail.com"
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = env["EMAIL_HOST_USER"]
+# EMAIL_HOST_PASSWORD = env["EMAIL_HOST_PASSWORD"]
 
 # Application definition
+
 INSTALLED_APPS = [
     "recipeComments.apps.RecipecommentsConfig",
     "main.apps.MainConfig",
@@ -61,7 +63,6 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "storages",
 ]
 # django_heroku.settings(locals(), staticfiles=False)
 
@@ -157,7 +158,9 @@ STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = "/media/"
 
-# API_KEY = env['API_KEY_SPOONACULAR']  # Spoonacular API key
+
+# API_KEY = env["API_KEY_SPOONACULAR"]  # Spoonacular API key
+API_KEY = "9f97e9f457aa4379ba2cb4c32072aec4"  # Spoonacular API key
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -176,16 +179,3 @@ LOGIN_URL = "login"
 SESSION_COOKIE_AGE = (
     60 * 60 * 24 * 30 * 12
 )  # 12 Months (Months are 30days so 360 days in total)
-
-# AWS
-AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
-AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
-AWS_STORAGE_BUCKET_NAME = os.environ.get("AWS_STORAGE_BUCKET_NAME")
-
-AWS_S3_FILE_OVERWRITE = False
-AWS_DEFAULT_ACL = None
-
-AWS_S3_REGION_NAME = "us-east-2"
-AWS_S3_SIGNATURE_VERSION = "s3v4"
-
-DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
